@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-cout<<"hell................. ';
+cout<<"hell................. ";
 return 0;
 }
