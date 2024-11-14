@@ -1,3 +1,9 @@
+//NO NEED OF SPACE OPTIMISATION BECAUSE WE NEED  TO KEEP TRACK OF LAST JUMPS 
+// AUR JUMPS AGAR N HUI MATLAB AGAR K N HUA TOH TOH SPACE COMPEXITY SAME HI RAEHGI
+ 
+ 
+
+ 
  // tabulation solution 
   ///TL- O(n*k)  (their are n subproblems and for each subproblem loop is running k times)
   // SC-O(N)
@@ -72,7 +78,7 @@ class Solution {
 
 
   //recursive solution 
-  ///TL- O(K^N
+  ///TL- O(K^N this tells minimum enerfy from f(n-1) to reach 0
   // SC-O(N)
 class Solution {
   public:
@@ -102,3 +108,12 @@ class Solution {
         return ans;
     }
 };
+
+
+
+
+
+
+
+
+
