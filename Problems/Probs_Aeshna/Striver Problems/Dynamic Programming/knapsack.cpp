@@ -21,6 +21,8 @@
   }
   return prev[maxWeight];
 }
+
+
 // space optimization O(maxweight)
 int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight) {
   vector<int> prev(maxWeight+1,0);
@@ -41,9 +43,11 @@ int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight) {
   }
   return prev[maxWeight];
 }
-//TABILATION(BOTTOM UP )
+
+
+//TABULATION(BOTTOM UP )
 //TIME COMPLEXITY (N*MAXWEIGHT)
-// SAPCE COMPLEXITY O(N*MAXWEIGHT)
+// SPACE COMPLEXITY O(N*MAXWEIGHT)
 int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight) {
   vector<vector<int>> dp(n + 1, vector<int>(maxWeight + 1, 0));
   // for every 0 index if the weight is less than maxweight we will return value[0] (BOTTOM CASE)
@@ -62,6 +66,8 @@ int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight) {
   }
   return dp[n - 1][maxWeight];
 }
+
+
 //MEMOIZATION   (USING DP ARRAY)
 // time complexity O(N*MAXWEIGHT) SUBPROBLEMS 
 // space complexity O(N) + O(N*MAXWEIGHT)
@@ -81,6 +87,8 @@ int func(int i, int maxWeight, vector<int> &weight, vector<int> &value,vector<ve
   }
   return dp[i][maxWeight]= max(pick, nonpick);
 }
+
+
 // for trying out all possibilities we do recursion and this func(n-1,wt) tells that from  (0->n-1)index wo kitna total paisa chura 
 // sakta hai with capacity of weight
 // time complexity 2^n
