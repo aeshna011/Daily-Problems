@@ -1,5 +1,8 @@
-// time complexity O(N*M) +O(n+m)
+// for finding the length 
+n-lcs+m-lcs+lcs
 
+//for printing that shortest common supersequence 
+//time complexity O(N*M) +O(n+m)
     string shortestCommonSupersequence(string str1, string str2) {
         
         int n=str1.length();
